@@ -1,41 +1,46 @@
 # Interactive Python Learning Sathi
 
-A simple Python program that helps first-semester students learn and revise Python topics. It has a menu where you can read about each unit and then take a quiz to check how much you understood.
+A beginner-friendly Python learning project for first-semester students. It combines unit-wise study notes with a quiz system in one console application, so learners can revise concepts and test themselves without switching between multiple resources.
 
 ## About the Project
 
-When I started learning Python in my first semester, I felt it would be easier to revise if the notes and the practice questions were in one place. So I made this console-based app. You can pick a unit, read the concepts, and then try the quiz to see your score. I made it for my VITyarthi "Build Your Own Project" submission.
+This project was created to make Python revision easier for students who are new to programming. Instead of searching through separate notes and question banks, they can open one menu, choose a unit, study the concepts, and then take a quiz to check their understanding.
+
+The application is built as a simple terminal-based program and is designed for educational use.
 
 ## Features
 
-- Main menu to move between all the units
+- Menu-based navigation for all Python units
 - Separate study section for each unit
-- Quiz mode that shows your score at the end
-- Easy-to-use console (terminal) interface
-- Code is divided into different files so it is easy to understand and add more things later
+- Quiz mode with score summary and answer review
+- Beginner-friendly console interface
+- Modular code structure for easy understanding and future expansion
 
 ## Units Covered
 
-- Unit 1: Problem solving and algorithms
-- Unit 2: Python data types, expressions and statements
-- Unit 3: Control flow, loops and basic algorithms
-- Unit 4: Factors, GCD and prime numbers
-- Unit 5: Arrays, lists and working with collections
+- Unit 1: Introduction to Problem Solving and Algorithms
+- Unit 2: Python Data, Expressions and Statements
+- Unit 3: Control Flow, Loops and Fundamental Algorithms
+- Unit 4: Factoring Methods, GCD and Prime Numbers
+- Unit 5: Arrays and List Processing Techniques
 
 ## Technologies Used
 
 - Python 3
-- `unittest` (built-in Python module) for testing
+- Python built-in `unittest` module for testing
+- VS Code for development
 - Git and GitHub for version control
-- VS Code as the code editor
 
 ## Project Structure
 
-```
+```text
 Project/
 ├── main.py
+├── README.md
+├── statement.md
 ├── Data/
 │   └── Quiz.py
+├── Diagram/
 ├── Help_utilities/
 │   └── Clear_screen.py
 ├── Modules/
@@ -46,58 +51,56 @@ Project/
 │   └── Unit_5.py
 ├── Screenshots/
 │   ├── Main menu.png
-│   ├── Quiz result.png
-│   └── Unit selection.png 
+│   ├── Unit selection.png
+│   └── Quiz result.png
 ├── Tests/
-│   └── test_functions.py
-└── README.md
-
+    └── test_functions.py
 ```
-
-The `report/diagrams` folder has the diagrams I made for the project report (architecture, sequence, use case and workflow).
 
 ## How to Run
 
-1. Install Python 3 on your computer if you don't have it already.
-2. Download or clone this repository.
-3. Open a terminal in the project folder and type:
+1. Make sure Python 3 is installed on your computer.
+2. Open a terminal in the project folder.
+3. Run the application with:
 
 ```python main.py```
 
-On Windows you can also use:
+On Windows, you can also use:
 
 ```py main.py```
 
-4. The main menu will open. From there you can choose a unit, start the quiz, or exit.
+4. Use the menu to choose a unit, start the quiz, or exit the program.
 
 ## How to Test
 
-I wrote some unit tests for the menu and the quiz. To run them, use this command in the project folder:
+The project includes unit tests for the quiz logic and main menu behavior. Run the following command from the project folder:
 
 ```python -m unittest discover -s Tests```
 
-If everything is working, all the tests will pass.
+This will execute the tests in the `Tests` folder and report if any checks fail.
 
 ## Screenshots
 
-*(Add your screenshots here)*
+The project includes screenshots in the `Screenshots` folder.
 
-| Main Menu | Unit Section | Quiz Result |
-|-----------|--------------|-------------|
-| ![Main Menu](Screenshots\Main menu.png) | ![Unit](Screenshots/Unit selection.png) | ![Quiz](Screenshots\Quiz result.png) |
+| Main Menu | Unit Selection | Quiz Result |
+|-----------|----------------|------------|
+| ![Main Menu](Screenshots/Main%20menu.png) | ![Unit Selection](Screenshots/Unit%20selection.png) | ![Quiz Result](Screenshots/Quiz%20result.png) |
 
 ## Who Can Use This
 
-- Beginners who are learning Python for the first time
-- Students who want to revise before exams
-- Anyone who wants a small terminal-based project example
+- First-year students learning Python
+- Students revising before internal or semester exams
+- Teachers or seniors who want a simple example project
+- Beginners who want to practice basic Python concepts
 
 ## Future Improvements
 
-- Add more quiz questions for every unit
-- Add a difficulty level (easy / medium / hard)
-- Save the scores so students can track their progress
+- Add more questions for each unit
+- Include difficulty levels such as easy, medium, and hard
+- Save quiz scores for later review
+- Add a graphical user interface (GUI)
 
 ## Note
 
-This project was made for learning purposes. You are free to use it or change it for your own practice.
+This project is intended for learning and educational practice. It can be modified and expanded for personal study or coursework use.
